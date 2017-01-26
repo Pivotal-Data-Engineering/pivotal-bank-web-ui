@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Order {
 
-	private Integer orderId;
+	private String orderId;
 
 	private String accountId;
 
@@ -21,11 +21,11 @@ public class Order {
 
 	private Integer quantity;
 
-	public Integer getOrderId() {
+	public String getOrderId() {
 		return orderId;
 	}
 
-	public void setOrderId(Integer orderId) {
+	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 

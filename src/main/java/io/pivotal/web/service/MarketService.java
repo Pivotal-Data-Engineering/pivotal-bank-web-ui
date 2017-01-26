@@ -32,8 +32,8 @@ import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 public class MarketService {
 	private static final Logger logger = LoggerFactory
 			.getLogger(MarketService.class);
+
 	@Autowired
-	@LoadBalanced
 	private RestTemplate restTemplate;
 
 
