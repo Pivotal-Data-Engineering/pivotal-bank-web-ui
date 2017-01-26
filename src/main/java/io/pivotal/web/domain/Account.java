@@ -11,8 +11,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Account {
 
 	@JsonProperty("id")
-	private Integer id;
-	
+	private String id;
+
 	@JsonProperty("userid")
 	private String userid;
 	
@@ -35,11 +35,11 @@ public class Account {
 	@JsonProperty("currency")
 	private String currency;
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
