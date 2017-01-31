@@ -84,7 +84,7 @@ repositories {
 	}
 
 	dependencyManagement {
-		imports { 
+		imports {
 			mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudStarterParentTrain}"
             mavenBom "io.pivotal.spring.cloud:spring-cloud-services-dependencies:${scsVersion}"
 		}

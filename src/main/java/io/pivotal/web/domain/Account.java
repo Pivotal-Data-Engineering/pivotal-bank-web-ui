@@ -15,10 +15,10 @@ public class Account {
 
 	@JsonProperty("userid")
 	private String userid;
-	
+
 	@JsonProperty("name")
 	private String name;
-	
+
 	@JsonProperty("creationdate")
 	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="yyyy-MM-dd HH:mm:ss")
     private Date creationdate;
@@ -181,7 +181,4 @@ public class Account {
 				.append("]");
 		return builder.toString();
 	}
-
-
-
- }
+}

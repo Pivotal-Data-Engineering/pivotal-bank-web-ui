@@ -33,12 +33,13 @@ public class QuotesService {
 	private static final Logger logger = LoggerFactory
 			.getLogger(QuotesService.class);
 	@Autowired
+	@LoadBalanced
 	private RestTemplate restTemplate;
 
 
     @Value("${pivotal.quotesService.name}")
 	private String quotesService;
-	
+
 	@HystrixCommand(fallbackMethod = "getQuoteFallback")
 	public Quote getQuote(String symbol) {
 		logger.debug("Fetching quote: " + symbol);
